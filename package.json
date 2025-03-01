@@ -1,14 +1,18 @@
 {
+  "homepage": "https://vityok02.github.io/webprog-js-lab-9/",
   "name": "vanilla-app-template",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+
     "dev": "vite",
     "build": "vite build --base=/vanilla-app-template/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
     "vite": "^5.4.6"
