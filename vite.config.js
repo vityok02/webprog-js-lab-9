@@ -7,6 +7,7 @@ import SortCss from 'postcss-sort-media-queries';
 export default defineConfig(({ command }) => {
   return {
     define: {
+      base: "/webprog-js-lab-9/",
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
@@ -34,7 +35,7 @@ export default defineConfig(({ command }) => {
           },
         },
       },
-      outDir: '../dist',
+      outDir: 'dist',
       emptyOutDir: true,
     },
     plugins: [
